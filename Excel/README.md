@@ -17,3 +17,23 @@ This project uses a hospital dataset to track metrics by department and doctor. 
 ## 📸 Dashboard Preview
 <img width="1912" height="958" alt="image" src="https://github.com/user-attachments/assets/928e006c-9f99-47d2-bf15-e4011bcbd66f" />
 
+---
+# Specialized Hospital Cost Analysis
+
+## 🎯 Objective
+To visualize and analyze total hospital costs broken down by specialized departments, attending doctors, and patient admission types.
+
+## 🛠️ Tools Used
+* **Microsoft Excel:** Pivot Charts (Bar, Column, Donut), Slicers, and Interactive Dashboard Design.
+
+## 📊 Project Overview
+This project provides a high-level view of hospital expenditures. I built an interactive dashboard to quickly identify cost centers and compare spending across different medical specialties and admission categories.
+
+### Key Features & Insights:
+* **Departmental Cost Centers:** Oncology represents the highest total cost among the analyzed departments, while Orthopedics represents the lowest.
+* **Admission Trends:** "Planned" admissions account for a significantly larger proportion of total hospital costs compared to "Emergency" admissions.
+* **Granular Breakdown:** The clustered column chart reveals that Planned Oncology admissions are the single highest cost segment across the entire dataset.
+* **Interactive Filtering:** Integrated slicers allow users to instantly filter the entire dashboard by specific Departments, Admission Types, or Doctors to isolate data points.
+
+## 📸 Dashboard Preview
+<img width="1000" height="617" alt="image" src="https://github.com/user-attachments/assets/2d506392-4d74-4bc3-97f2-0700eaf276e9" />
