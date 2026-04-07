@@ -114,7 +114,7 @@ To implement robust, reusable code structures using Object-Oriented Programming 
 * **Logic:** Implements mathematical conversions for Celsius, Fahrenheit, and Kelvin scales with user-driven input validation.
 
   ---
-  # Exploratory Data Analysis (EDA): Restaurant Tipping Behavior
+# Exploratory Data Analysis (EDA): Restaurant Tipping Behavior
 
 ## 🎯 Objective
 To perform a comprehensive statistical and visual analysis of consumer tipping patterns to identify key revenue drivers and behavioral trends.
