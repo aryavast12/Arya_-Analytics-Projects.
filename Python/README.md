@@ -112,3 +112,32 @@ To implement robust, reusable code structures using Object-Oriented Programming 
 
 ### 3. Temperature Conversion Utility
 * **Logic:** Implements mathematical conversions for Celsius, Fahrenheit, and Kelvin scales with user-driven input validation.
+
+  ---
+  # Exploratory Data Analysis (EDA): Restaurant Tipping Behavior
+
+## 🎯 Objective
+To perform a comprehensive statistical and visual analysis of consumer tipping patterns to identify key revenue drivers and behavioral trends.
+
+## 🛠️ Tools & Libraries Used
+* **Python:** Data manipulation and statistical computation.
+* **Pandas & NumPy:** Data cleaning, type conversion, and descriptive statistics.
+* **Seaborn & Matplotlib:** Advanced data visualization (Heatmaps, Violin plots, Boxplots).
+
+## 📊 Project Workflow
+
+### 1. Data Sanitization
+* **Cleaning:** Identified and handled missing values to ensure data integrity.
+* **Normalization:** Renamed features for business clarity (e.g., `TotalBill`, `SmokerStatus`) and ensured correct data types for mathematical analysis.
+
+### 2. Statistical Profiling
+* Calculated central tendency (Mean/Median) and dispersion (Standard Deviation) to understand the "average" customer profile.
+* **Distribution Analysis:** Discovered that both bills and tips follow a **right-skewed distribution**, indicating a high volume of standard transactions with a few high-value outliers.
+
+### 3. Visual Insights & Bi-Variate Analysis
+* **Correlation:** Used a Heatmap to confirm a strong positive correlation (0.68) between bill size and tip amount.
+* **Categorical Trends:** Identified that weekends and dinner times are peak periods for both customer volume and higher total expenditure.
+* **Outlier Detection:** Used Boxplots to isolate anomalies in party sizes and extreme tipping behavior.
+
+## 💡 Conclusion & Business Impact
+The analysis suggests that tipping behavior is most strongly influenced by the total bill and the time of day rather than the smoking status of the guest. This data could be used to build a **Predictive Linear Regression model** to forecast weekly staffing needs based on projected revenue.
