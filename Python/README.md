@@ -87,3 +87,28 @@ This collection of scripts demonstrates the ability to translate scientific ques
 
 ## 🚀 How to Run
 These snippets can be run in any standard Python environment or a Jupyter/Colab notebook. Each block is self-contained with print statements showing the input data vs. the calculated output.
+
+---
+# Object-Oriented System Simulations (OOP & File I/O)
+
+## 🎯 Objective
+To implement robust, reusable code structures using Object-Oriented Programming (OOP) principles and persistent data storage through File I/O operations.
+
+## 🛠️ Tools & Concepts Used
+* **OOP Principles:** Class Inheritance, Encapsulation (Private Variables), and Constructor Methods (`__init__`).
+* **Persistent Storage:** File reading (`r`) and appending (`a`) to maintain data across sessions.
+* **Error Handling:** `try-except` blocks to prevent crashes during FileNotFoundError or ValueError.
+* **Modular Logic:** Function-based architecture for clean, readable code.
+
+## 💻 Integrated Modules:
+
+### 1. Student Management System
+* **Concept:** Demonstrates **Inheritance** by creating a `Student` subclass that inherits attributes from a base `Person` class.
+* **Functionality:** Collects user input and saves student records to a permanent `students.txt` database.
+
+### 2. Encapsulated Banking Simulation
+* **Concept:** Showcases **Encapsulation** by using private attributes (`__balance`) to protect sensitive data from direct external modification.
+* **Functionality:** Features a complete transaction system with deposits, withdrawals (with limit checks), and a persistent `transactions.txt` log for auditing history.
+
+### 3. Temperature Conversion Utility
+* **Logic:** Implements mathematical conversions for Celsius, Fahrenheit, and Kelvin scales with user-driven input validation.
