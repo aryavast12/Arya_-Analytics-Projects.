@@ -37,3 +37,25 @@ This project provides a high-level view of hospital expenditures. I built an int
 
 ## 📸 Dashboard Preview
 <img width="1000" height="617" alt="image" src="https://github.com/user-attachments/assets/2d506392-4d74-4bc3-97f2-0700eaf276e9" />
+
+---
+# Comprehensive Hospital Revenue & Patient Load Dashboard
+
+## 🎯 Objective
+To track hospital revenue generation against patient volume, departmental capacity, and insurance provider contributions.
+
+## 🛠️ Tools Used
+* **Microsoft Excel:** Pivot Charts (Clustered Columns, Pie, Stacked Bar), Slicers, and Custom Chart Formatting.
+
+## 📊 Project Overview
+This dashboard provides a holistic view of hospital operations, balancing financial metrics with patient flow. It highlights where the hospital is generating the most revenue and how different insurance providers impact the bottom line.
+
+### Key Features & Insights:
+* **Revenue Leaders:** Neurology currently drives the highest total revenue (Sum of Bill Amount), significantly outpacing other departments like General and Pediatrics.
+* **Insurance Impact:** The data shows that patients covered by Star Health and HDFC Ergo contribute the vast majority of the hospital's billed revenue, while uninsured patients ("None") represent a very small fraction.
+* **Patient Flow & Capacity:** The horizontal stacked bar chart breaks down the "Active" vs. "Discharged" status across departments, offering a quick snapshot of current hospital load (e.g., Cardiology shows a high rate of discharged patients).
+* **Interactive Filtering:** Slicers for Status, Department, and Insurance Provider allow for deep dives into specific operational bottlenecks or financial opportunities.
+
+## 📸 Dashboard Preview
+<img width="1080" height="616" alt="image" src="https://github.com/user-attachments/assets/69912382-fbc5-4fd1-9125-9641064e4383" />
+
