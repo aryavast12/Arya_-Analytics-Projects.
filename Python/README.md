@@ -37,6 +37,28 @@ This script automates the creation of secure passwords by combining lowercase le
 * **Comprehensive Character Pool:** Utilizes the full `string` library to ensure passwords meet standard complexity requirements (Alphanumeric + Special Characters).
 * **Random Sampling:** Uses `random.sample()` to ensure that characters are picked without replacement from the pool, preventing predictable patterns.
 * **Customizable Length:** Allows the user to define exactly how long the password should be via terminal input.
+
+---
+# Multi-Tenant Rent & Utility Calculator
+
+## 🎯 Objective
+To automate the calculation of individual financial contributions in a shared living space, accounting for fixed rent, variable food costs, and metered electricity usage.
+
+## 🛠️ Tools & Concepts Used
+* **Python:** Integer casting (`int`), Variable Assignment, and Arithmetic Operators.
+* **Mathematical Logic:** Floor Division (`//`) to ensure clean, whole-number currency outputs.
+
+## 💻 Project Overview
+This script acts as a financial organizer for roommates or hostel residents. It takes multiple cost inputs and divides them equally among the total number of occupants.
+
+### Key Features:
+* **Utility Metering:** Calculates the electricity bill dynamically by multiplying units spent by the cost per unit.
+* **Consolidated Billing:** Aggregates rent, food, and utilities into a single `total_bill` before division.
+* **Per-Capita Distribution:** Automatically adjusts the final output based on the number of persons living in the flat.
+* **User-Friendly CLI:** Uses clear prompts to guide the user through entering their monthly expenses.
+
+## 🚀 How to Run
+Run the script and enter the requested values (Rent, Food, Electricity Units, Charge per Unit, and Number of People). The script will return the exact amount each person owes.
 * **Clean Output:** Uses the `.join()` method to convert the randomized list of characters back into a seamless string for the user.
 
 ## 🚀 How to Run
