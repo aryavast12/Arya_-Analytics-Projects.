@@ -47,4 +47,29 @@ This dashboard acts as a strategic operations tracker, allowing stakeholders to 
 <img width="787" height="626" alt="image" src="https://github.com/user-attachments/assets/93e08a0d-6553-4c28-a785-f3f2ca53e7d4" />
 
 ---
+# Global Financial Audit: Revenue Leakage & Margin Optimization
+
+## 🎯 Objective
+To identify and analyze "Revenue Leakage"—the gap between projected and actual revenue—primarily driven by excessive discounting, and to provide data-backed recommendations for margin recovery.
+
+## 🛠️ The Tech Stack
+* **Business Intelligence:** Power BI Desktop for complex financial modeling and variance analysis.
+* **Data Processing:** DAX (Data Analysis Expressions) used to calculate specific leakage rates, projected vs. actual revenue variances, and percentage distributions.
+* **Data Source:** Historical global sales and shipping datasets (1996–1998).
+
+## 📊 Project Overview
+This dashboard serves as a strategic risk-management tool. It identifies where projected revenue is being eroded, allowing financial controllers to audit discount approval thresholds and regional sales behavior. By quantifying "leakage," the tool turns abstract losses into a prioritized financial recovery plan.
+
+### 💰 Key Financial Insights & Features:
+* **Core Audit KPIs:** High-visibility tracking of the **6.55% Global Leakage Rate**, identifying a total revenue gap of **$88.67K** ($1.35M Projected vs. $1.27M Actual).
+* **Geographic Risk Assessment:** A detailed performance table isolating the **USA** as the primary financial hotspot, accounting for ~$17.9K of total leakage.
+* **Category Vulnerability:** A pie chart breakdown identifying **Beverages (21.04%)** and Dairy Products as the sectors most susceptible to margin erosion through aggressive discounting.
+* **Historical Trend Analysis:** A time-series line chart tracking leakage from 1996–1998, pinpointing a critical peak in 1997 that suggests a need for tighter seasonal fiscal controls.
+* **Interactive Auditing:** Slicers for ShipCountry and Category enable stakeholders to drill down from global trends into specific regional sales representative behaviors.
+
+## 💡 Strategic Recommendation
+Based on the high leakage volume in US-based Beverage sales, the data suggests an immediate audit of discount approval thresholds is required to mitigate further margin loss and improve the global bottom line.
+
+## 📸 Dashboard Preview
+<img width="1330" height="739" alt="image" src="https://github.com/user-attachments/assets/31c6e1cd-e07f-40ac-9e69-f0e39fa89a64" />
 
