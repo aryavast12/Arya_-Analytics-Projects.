@@ -22,3 +22,29 @@ This dashboard serves as a high-level analytical tool for clinical researchers, 
 ## 📸 Dashboard Preview
 <img width="1024" height="551" alt="image" src="https://github.com/user-attachments/assets/85c1776e-0e44-4383-b7a8-3215d7f277aa" />
 
+---
+
+# Global Operations KPI Dashboard
+
+## 🎯 Objective
+To provide executive leadership with a consolidated, high-level view of global operational performance, tracking profitability, cost management, and unit volume across international markets and product lines.
+
+## 🛠️ The Tech Stack
+* **Business Intelligence:** Power BI Desktop for interactive dashboard design and data modeling.
+* **Data Processing:** DAX (Data Analysis Expressions) for calculating dynamic operational metrics and aggregations.
+* **Data Visualization:** Matrix tables, column charts, time-series line charts, and KPI summary cards.
+
+## 📊 Project Overview
+This dashboard acts as a strategic operations tracker, allowing stakeholders to quickly assess the health of global manufacturing and sales. By contrasting Total Costs against Operational Profit, the tool helps identify which products and regions are driving the business forward and which may require cost-optimization.
+
+### 🌍 Key Operational Insights & Features:
+* **Executive Scale KPIs:** High-level tracking of massive operational scale—managing 1.13M total units and $101.83M in costs to successfully generate ~$16.89M in Operational Profit.
+* **Product Line Dominance:** A detailed matrix analysis reveals 'Paseo' as the flagship product, driving the highest volume (338K+ units) and yielding the highest operational profit (~$4.79M) compared to lines like Amarilla or Velo.
+* **Geographical Profitability:** A column chart comparing international markets shows European regions (France and Germany) leading in operational profitability, closely followed by the Canadian market.
+* **Temporal Volatility:** Time-series analysis tracking Total Units by Date identifies critical operational peaks in mid-to-late 2014 (specifically June and October). This historical trend data is essential for future supply chain forecasting and inventory management.
+
+## 📸 Dashboard Preview
+<img width="787" height="626" alt="image" src="https://github.com/user-attachments/assets/93e08a0d-6553-4c28-a785-f3f2ca53e7d4" />
+
+---
+
