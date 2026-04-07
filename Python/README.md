@@ -17,3 +17,27 @@ This is a foundational Python script that simulates a restaurant ordering proces
 
 ## 🚀 How to Run
 Run the script in any standard Python environment or terminal. Follow the on-screen text prompts to place an order.
+
+---
+
+# Secure Password Generator
+
+## 🎯 Objective
+To create a utility script that generates high-entropy, randomized passwords based on user-defined length requirements.
+
+## 🛠️ Tools & Concepts Used
+* **Python Modules:** `string` (for character sets) and `random` (for non-sequential sampling).
+* **Data Structures:** Lists and character arrays.
+* **Methods:** `list.extend()`, `random.sample()`, and `"".join()`.
+
+## 💻 Project Overview
+This script automates the creation of secure passwords by combining lowercase letters, uppercase letters, digits, and punctuation marks into a single character pool.
+
+### Key Features:
+* **Comprehensive Character Pool:** Utilizes the full `string` library to ensure passwords meet standard complexity requirements (Alphanumeric + Special Characters).
+* **Random Sampling:** Uses `random.sample()` to ensure that characters are picked without replacement from the pool, preventing predictable patterns.
+* **Customizable Length:** Allows the user to define exactly how long the password should be via terminal input.
+* **Clean Output:** Uses the `.join()` method to convert the randomized list of characters back into a seamless string for the user.
+
+## 🚀 How to Run
+Run the script in your terminal. When prompted, enter the desired numerical length for your password (e.g., 12 or 16).
