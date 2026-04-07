@@ -16,3 +16,24 @@ This script simulates a real-world financial audit within a clinical setting. By
 1. **Denial Rate Calculation:** Isolating the percentage of total claims that were rejected versus those successfully processed.
 2. **Revenue at Risk:** Quantifying the total dollar amount currently held in "Rejection Status" to prioritize follow-ups.
 3. **Provider Performance:** Segmenting rejections by department or physician to identify where additional training in clinical documentation is required.
+---
+
+# Healthcare Lab Operations & Performance Analysis
+
+## 🎯 Objective
+To build a robust relational database for hospital laboratory management and perform advanced analytical queries to monitor Turnaround Time (TAT), test distribution, and financial performance.
+
+## 🛠️ Advanced SQL Techniques Used
+* **Data Definition (DDL):** Designed and implemented a relational schema with Primary/Foreign key constraints for Hospital Departments and Lab Results.
+* **Window Functions:** Leveraged `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` for result sequencing and `LAG/LEAD` for comparative period-over-period revenue analysis.
+* **Complex Joins:** Utilized `INNER JOIN` for operational analysis and `LEFT JOIN` for comprehensive auditing and data coverage checks.
+* **Conditional Logic:** Implemented `CASE WHEN` statements to categorize performance metrics (e.g., classifying Turnaround Times as 'Fast', 'Moderate', or 'Critical Delay').
+* **Statistical Aggregation:** Applied `GROUP BY` and `HAVING` filters to calculate departmental averages, minimums, and maximums for lab efficiency reporting.
+
+## 📊 Business Logic & Clinical Insights
+This suite demonstrates the ability to translate raw clinical timestamps into operational intelligence.
+
+### Key Analysis Milestones:
+1. **Turnaround Time (TAT) Optimization:** Identified departments with "Critical Delays" (TAT > 24 hours) using automated case logic.
+2. **Departmental Efficiency:** Segmented lab tests by volume and average speed to isolate bottlenecks in specialized departments like Microbiology and Hematology.
+3. **Revenue Growth Tracking:** Utilized `LAG()` functions on sales data to compare current-day revenue against previous performance, enabling real-time growth monitoring.
