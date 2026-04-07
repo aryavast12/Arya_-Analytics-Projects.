@@ -59,3 +59,25 @@ This dashboard provides a holistic view of hospital operations, balancing financ
 ## 📸 Dashboard Preview
 <img width="1080" height="616" alt="image" src="https://github.com/user-attachments/assets/69912382-fbc5-4fd1-9125-9641064e4383" />
 
+---
+# Monthly Retail Sales & Performance Dashboard
+
+## 🎯 Objective
+To analyze net sales performance for the month of October, breaking down revenue by region, product category, and individual sales personnel.
+
+## 🛠️ Tools Used
+* **Microsoft Excel:** Pivot Charts (Line, Horizontal Bar, Pie, Histogram), Timeline Slicers, and Data Grouping.
+
+## 📊 Project Overview
+This dashboard tracks key retail metrics to evaluate regional market strength and product popularity. It is designed to help sales managers quickly identify top-performing assets and areas needing targeted marketing efforts.
+
+### Key Features & Insights:
+* **Regional Dominance:** The state-by-state line chart reveals that Maharashtra significantly outperforms all other regions in net sales, indicating a strong primary market.
+* **Top Product Drivers:** A breakdown of the Top 5 Products shows the Samsung 55" QLED TV as the massive dominant revenue driver (₹74,100), followed by Apple AirPods Pro, highlighting a strong consumer lean toward high-ticket electronics.
+* **Sales Team Analytics:** Tracked individual performance metrics, easily identifying top contributors (e.g., Salesperson S-101) to help evaluate team efficiency.
+* **Interactive Time-Tracking:** Implemented an Order Date "Timeline" slicer, allowing users to scrub through specific days in late September and October to spot daily sales spikes.
+
+## 📸 Dashboard Preview
+<img width="896" height="565" alt="image" src="https://github.com/user-attachments/assets/5bc13551-32c7-44c0-bd46-28873ad3b7cc" />
+
+
