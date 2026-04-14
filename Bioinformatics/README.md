@@ -71,5 +71,43 @@ To be utilized effectively as cloning or expression vectors in biotechnology, bo
 ## 🤝 Authors
 * **Arya Vast** (Project Lead)
 * **Nikita Divate** (Collaborator - Group 10)
-----
 
+----
+# Structural Modelling, Validation, and Analysis of HeV-g2 Attachment Glycoprotein
+
+## 🧬 Overview
+HeV-g2 is a newly discovered Henipavirus variant recently identified in horses and bats. The experimental 3D structure of its attachment glycoprotein is currently unknown, creating a gap in our understanding of the virus. This project generates a 3D homology model for the protein (Accession: UCY33688) to analyse its structural stability compared to the pathogenic Hendra virus. These insights are critical for predicting how the virus interacts with host receptors.
+
+## 🛠️ Tools & Technologies
+* **SWISS-MODEL:** Used for homology modelling of the protein structure.
+* **ProSA-web:** Utilized for global quality estimation and analyzing the model's energy profile.
+* **PROCHECK (SAVES v6.0):** Applied for stereochemical validation and Ramachandran plot generation.
+* **UCSF Chimera:** Used for detailed 3D structural analysis and visualization.
+
+## 🔬 Methodology
+* **Target Sequence:** Selected the HeV-g2 attachment glycoprotein (Accession: UCY33688) to serve as the target sequence.
+* **Structural Template:** Identified the Hendra Virus glycoprotein (PDB ID: 6PDL) as the optimal structural template.
+* **Alignment:** Achieved a 92.82% sequence identity match. Ensured high model confidence, since identity scores above 90% typically yield accurate structures with minimal error.
+
+## 📊 Validation & Quality Results
+
+### Stereochemical Validation
+* Assessed the stereochemical quality of the protein backbone using the Ramachandran plot via PROCHECK.
+* Observed that 88.4% of residues fall within the "Most Favoured Regions", indicating a highly stable structure.
+* Outperformed the reference study, which reported a slightly lower score of 86.9% in favoured regions.
+* Confirmed excellent model quality, with only 0.3% outliers (a single residue) found in the disallowed regions.
+
+### Global & Local Quality Estimation
+* **Global Z-Score:** Evaluated the model's energy profile against experimentally determined protein structures, achieving a Z-Score of -7.91, indicating a stable, native-like conformation. This surpassed the reference study's benchmark of -7.79.
+* **Local Quality:** Analyzed the structural reliability of individual amino acids, observing high confidence scores that align with stable beta-sheet regions and confirm the rigidity of the propeller blades. Dips in the graph correspond to flexible loops on the protein surface, demonstrating a realistic biological balance between a stable internal core and surface flexibility.
+
+## 🧩 Structural Insights
+* Reveals a classic six-bladed beta-propeller fold, a structural signature typical of the Henipavirus attachment glycoproteins.
+* Shows a dominance of anti-parallel beta-sheets, which arrange symmetrically to form the "blades" of the propeller.
+* Highlights the conserved architecture required for binding to the host receptor EFNB2, suggesting a shared infection mechanism with the Hendra and Nipah viruses.
+
+## 🎓 Academic Context
+This project was completed for the PGD Bioinformatics program at St. Xavier's College.
+
+## ✍️ Author
+**Arya Shailesh Vast**
