@@ -21,3 +21,5 @@ This research bridges the gap between biotechnology and circular economics. By c
 
 ## 📄 Full Research Document
 The complete research paper—authored by Arya Shailesh Vast, Tulsi Hebbar, and Dr. Sejal Rathod (Kishinchand Chellaram College)—including the detailed literature review and comprehensive data tables, is available in the PDF format within this directory.
+
+
