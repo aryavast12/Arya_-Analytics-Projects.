@@ -146,11 +146,6 @@ To visualize the distribution of these dysregulated genes, a **Volcano Plot** wa
 * The y-axis represents the statistical significance (−log₁₀ adjusted p-value).
 * Genes exhibiting significant differential expression are highlighted in blue, distinctly separating them from non-significant genes.
 
-## 🚀 Usage
-To reproduce this analysis, run the provided R script. Ensure you have the necessary CRAN and Bioconductor packages installed:
-```R
-# install.packages(c("rlang", "vctrs", "scales", "gtable", "ggplot2"))
-# BiocManager::install(c("GEOquery", "limma", "Biobase"))
 
 ---
 # Molecular Docking Protocol Validation and Rational Ligand Modification of EGFR Kinase Domain (1M17)
