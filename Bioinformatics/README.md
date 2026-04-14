@@ -28,3 +28,48 @@ The data was collected and processed using the following bioinformatics workflow
 * **Biological:** Specific biological
 
 ---
+
+# Evaluating Plasmid Suitability for Molecular Cloning
+
+## 🧬 Overview
+This project evaluates the potential of two natural plasmids, **pAcX50a** and **pAcX50b**, isolated from the nitrogen-fixing bacterium *Azotobacter chroococcum*, for use as molecular cloning vectors. 
+
+The study utilizes in-silico restriction enzyme analysis, restriction map construction, and simulated agarose gel electrophoresis to assess the structural and functional viability of these plasmids for assembling and propagating recombinant DNA.
+
+## 🛠️ Tools & Technologies
+* **Sequence Retrieval:** NCBI / PLSDB
+* **Restriction Enzyme Analysis:** NEBcutter
+* **Plasmid Mapping & Visualization:** SnapGene
+
+## 🔬 Methodology
+1. **Sequence Retrieval:** Extracted plasmid sequences for pAcX50a (10,435 bp) and pAcX50b (13,852 bp).
+2. **Feature Analysis:** Identified critical vector components, including the origin of replication (ori) and gene organization.
+3. **Enzyme Selection:** Performed restriction analysis using NEBcutter to identify unique cut sites in safe zones (away from essential genes).
+4. **Map Construction:** Built detailed restriction maps indicating gene regions and enzyme cut sites.
+5. **Simulation:** Ran simulated agarose gel electrophoresis for fragment visualization.
+6. **Evaluation:** Compared both plasmids against standard cloning vector requirements (ori, selectable markers, Multiple Cloning Sites).
+
+## 📊 Key Findings & Comparative Analysis
+
+### Plasmid 1: pAcX50a (Accession: CP010416)
+* **Size:** 10,435 bp
+* **Origin of Replication:** Contains a *trfA*-like replication initiator gene.
+* **Cloning Features:** Lacks selectable markers, an MCS, and a promoter for inserted genes.
+* **Potential Insertion Sites:** `SpeI` and `SrfI` were identified as the best potential sites for gene insertion, as they are unique cutters located away from essential genes.
+
+### Plasmid 2: pAcX50b (Accession: CP010417)
+* **Size:** 13,852 bp (Carries a larger genetic load).
+* **Origin of Replication:** Contains a *trfA*-like replication initiator protein (Achr_b90).
+* **Cloning Features:** Lacks selectable markers, an MCS, and a promoter.
+* **Potential Insertion Sites:** `HindIII` and `XbaI` serve as the most viable unique cut sites for potential engineering.
+
+## 💡 Conclusion
+Both pAcX50a and pAcX50b are naturally occurring plasmids that are currently **poorly suited** for immediate molecular cloning. While they possess an origin of replication and have potential unique restriction sites located in safe zones, the absence of selectable markers (e.g., antibiotic resistance) and a centralized Multiple Cloning Site (MCS) severely limits their laboratory utility. 
+
+To be utilized effectively as cloning or expression vectors in biotechnology, both plasmids would require significant genetic engineering to introduce these missing essential elements.
+
+## 🤝 Authors
+* **Arya Vast** (Project Lead)
+* **Nikita Divate** (Collaborator - Group 10)
+----
+
