@@ -111,3 +111,43 @@ This project was completed for the PGD Bioinformatics program at St. Xavier's Co
 
 ## ✍️ Author
 **Arya Shailesh Vast**
+
+---
+
+# Differential Gene Expression Analysis in Duchenne Muscular Dystrophy (DMD)
+
+## 🧬 Overview
+This repository contains an R-based differential gene expression (DGE) analysis pipeline investigating Duchenne Muscular Dystrophy (DMD), a rare neuromuscular disorder. Using publicly available transcriptomic data from the GEO database, this project identifies statistically significant genes that are differentially expressed between DMD patients and healthy controls.
+
+## 📊 Dataset Details
+* **GEO Accession:** GSE38417
+* **Organism:** *Homo sapiens*
+* **Sample Type:** Skeletal Muscle Biopsies
+* **Platform:** Affymetrix Human Genome U133 Plus 2.0
+* **Study Design:** 22 total samples (16 DMD patient biopsies vs. 6 pathologically normal control biopsies).
+
+## 🛠️ Tech Stack & Libraries
+* **Language:** R
+* **Data Retrieval:** `GEOquery`
+* **Statistical Analysis:** `limma`, `Biobase`
+* **Data Visualization:** `ggplot2`
+
+## 🔬 Methodology Workflow
+1. **Data Acquisition:** Retrieved the GSE38417 expression matrix and sample metadata directly from the GEO database using R.
+2. **Data Preprocessing:** Extracted, organized, and classified the samples into two distinct groups: `DMD` and `Control`.
+3. **Statistical Modelling:** Constructed a design matrix and utilized a linear model (`lmFit`) combined with Empirical Bayes statistics (`eBayes`) via the `limma` package to evaluate differential expression.
+4. **Significance Thresholding:** Filtered for statistically significant dysregulated genes using a strict threshold of **|log₂ Fold Change| > 1** and an **Adjusted P-value (FDR) < 0.05**.
+
+## 📈 Results & Visualizations
+The analysis output includes a comprehensive list of differentially expressed genes, saved as `DMD_DEG_results.csv`. 
+
+To visualize the distribution of these dysregulated genes, a **Volcano Plot** was generated (`Volcano_DMD.png`). In this plot:
+* The x-axis represents the log₂ fold change.
+* The y-axis represents the statistical significance (−log₁₀ adjusted p-value).
+* Genes exhibiting significant differential expression are highlighted in blue, distinctly separating them from non-significant genes.
+
+## 🚀 Usage
+To reproduce this analysis, run the provided R script. Ensure you have the necessary CRAN and Bioconductor packages installed:
+```R
+install.packages(c("rlang", "vctrs", "scales", "gtable", "ggplot2"))
+BiocManager::install(c("GEOquery", "limma", "Biobase"))
