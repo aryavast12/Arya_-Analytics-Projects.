@@ -151,3 +151,82 @@ To reproduce this analysis, run the provided R script. Ensure you have the neces
 ```R
 install.packages(c("rlang", "vctrs", "scales", "gtable", "ggplot2"))
 BiocManager::install(c("GEOquery", "limma", "Biobase"))
+
+---
+# Molecular Docking Protocol Validation and Rational Ligand Modification of EGFR Kinase Domain (1M17)
+
+## 🧬 Overview
+This project focuses on validating a molecular docking protocol and applying rational ligand modifications to the Epidermal Growth Factor Receptor (EGFR) kinase domain. Using PDB ID: 1M17, a highly validated oncology target, the study aims to establish a reliable docking procedure and explore how specific structural changes to a native inhibitor (AQ4) affect binding affinity within the ATP-binding pocket.
+
+## 🛠️ Tools & Technologies
+* **UCSF Chimera (v1.16):** Used for receptor preparation, RMSD validation calculations, and generating 3D receptor-ligand interaction visualizations.
+* **MolView (Web Server):** Utilized for sketching rational modifications and applying the UFF force field for energy minimization.
+* **PyRx (AutoDock Vina):** Applied for file format conversion, defining grid box parameters, and executing batch docking.
+
+## 🔬 Methodology
+
+### 1. Receptor Preparation
+The 1M17 receptor was prepared using UCSF Chimera. Missing residues and incomplete side chains were repaired using the Dock Prep tool. Polar hydrogens were added to assign physiological protonation states, and AMBER charges were computed.
+
+### 2. Validation Protocol
+A redocking procedure was performed to validate the protocol and the selected grid box. The extracted native ligand (AQ4) was redocked into the prepared active site using AutoDock Vina via PyRx. The maximized grid box allowed the ligand to freely sample alternative conformations.
+
+### 3. Rational Ligand Modification Strategy
+Based on Structure-Activity Relationship (SAR) principles, ten rational modifications were designed and applied to the native AQ4 ligand. These modifications aimed to:
+* Probe the steric boundaries of the hydrophobic cleft.
+* Introduce novel hydrogen-bonding interactions.
+* Evaluate the effects of bio isosteric substitutions.
+
+## 📊 Key Results
+
+* **Baseline Validation:** The native ligand (AQ4) achieved a baseline binding affinity of -6.8 kcal/mol. Structural alignment of the redocked ligand against the original conformation yielded an RMSD of 5.119 Å, reflecting the use of a maximized grid box.
+* **Best Modification (Mod 9):** Chain shortening optimized the distance for ideal solvent-channel interaction, resulting in the highest binding affinity improvement to **-7.6 kcal/mol**. Visual analysis confirmed a deep, high-affinity fit within the hydrophobic cleft.
+* **Neutral/Worst Modification (Mod 3):** The addition of a hydroxyl (-OH) group failed to yield an energetic advantage (remaining at -6.8 kcal/mol), likely due to a lack of proximity to appropriate polar residues in the binding pocket.
+* **Other Findings:** Several modifications, including terminal carbon addition, halogen substitutions (Fluorine, Chlorine), and ethoxy side-chain extensions, consistently improved binding affinities compared to the baseline.
+
+## 🎓 Academic Context
+This docking and ligand modification project was completed as part of the PG Diploma in Bioinformatics program at St. Xavier's College.
+
+## ✍️ Author
+**Arya Vast**
+---
+
+# Comparative Molecular Dynamics Analysis of Viral Attachment Proteins
+
+## 🧬 Overview
+This project investigates the binding dynamics between viral attachment proteins (Virus A and Virus B) and the host cell's E2 receptor. By performing a 200-nanosecond (ns) Molecular Dynamics (MD) simulation, the physical movements of these complexes were tracked over time to determine which virus establishes a more effective and stable attachment to the host. 
+
+The comparative analysis evaluates structural stability, compactness, solvent exposure, and interaction strength to draw conclusions about viral infectivity mechanisms.
+
+## 🛠️ Tools & Technologies
+* **GROMACS:** Utilized for executing the 200-ns Molecular Dynamics (MD) simulations.
+* **Trajectory Analysis:** Assessment of Root Mean Square Deviation (RMSD), Radius of Gyration (Rg), Solvent Accessible Surface Area (SASA), and Hydrogen Bond formations.
+
+## 📊 Key Findings
+
+### 1. Structural Stability (RMSD)
+* **Virus A:** Demonstrated exceptional structural stability, maintaining a steady, low average RMSD of approximately 0.30 nm, indicating a rigid and secure backbone.
+* **Virus B:** Experienced higher initial fluctuations before stabilizing at a higher average of 0.45 nm, indicating a more flexible backbone structure.
+
+### 2. Complex Compactness (Radius of Gyration - Rg)
+* **Virus B** maintained a significantly lower Rg value (~2.45 nm) compared to **Virus A** (~2.70 nm). 
+* This indicates that while Virus B has a flexible backbone, it folds into a much tighter, securely packed conformation when locked onto the E2 receptor.
+
+### 3. Solvent Exposure (SASA)
+* **Virus B** exhibited a lower SASA profile (averaging ~235-245 nm²) compared to **Virus A** (~260-270 nm²).
+* This corroborates the Rg data: Virus B's tight packing against the receptor buries its interacting surfaces, leaving less of its internal structure exposed to the surrounding solvent.
+
+### 4. Interaction Strength (Hydrogen Bonds)
+* **Virus B** consistently formed a higher number of hydrogen bonds with the E2 receptor (averaging >410 bonds) compared to **Virus A** (averaging <400 bonds).
+* This higher bond density provides Virus B with a stronger, more resilient grip on the host cell.
+
+## 💡 Conclusion
+The comparative simulation reveals a distinct dynamic between the two viruses. While Virus A presents a more rigid overall backbone, Virus B compensates for its initial flexibility by forming a remarkably compact interaction interface (lower Rg and SASA) and establishing a significantly stronger network of hydrogen bonds. 
+
+Based on these computational models, the tighter packing and superior hydrogen-bonding network strongly suggest that **Virus B forms a more efficient, high-affinity connection** with the host E2 receptor.
+
+## 🎓 Academic Context
+This Molecular Dynamics simulation and analysis project was completed as part of the PG Diploma in Bioinformatics program at St. Xavier's College.
+
+## ✍️ Author
+**Arya Vast**
