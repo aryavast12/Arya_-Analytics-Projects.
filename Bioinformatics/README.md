@@ -152,6 +152,11 @@ To reproduce this analysis, run the provided R script. Ensure you have the neces
 install.packages(c("rlang", "vctrs", "scales", "gtable", "ggplot2"))
 BiocManager::install(c("GEOquery", "limma", "Biobase"))
 
+
+
+
+
+
 ---
 # Molecular Docking Protocol Validation and Rational Ligand Modification of EGFR Kinase Domain (1M17)
 
@@ -189,6 +194,10 @@ This docking and ligand modification project was completed as part of the PG Dip
 
 ## ✍️ Author
 **Arya Vast**
+
+
+
+
 ---
 
 # Comparative Molecular Dynamics Analysis of Viral Attachment Proteins
